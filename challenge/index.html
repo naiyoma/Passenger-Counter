@@ -3,41 +3,58 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="Index.css" />
+        <link rel="stylesheet" href="css/styles.css" />
         <title>Title</title>
     </head>
     <body>
         <header>
-            <h1>All about Cars</h1>
+            <h1>All about Cats</h1>
         </header>
         <main>
-            <section class="main-content">  
-                <h2>Lizards are awesome</h2>
-                <p>Lectus diam adipiscing faucibus consequat, auctor molestie a mauris. Cras libero risus ut enim, in purus tellus scelerisque. Nibh mattis dignissim lorem morbi molestie. Mauris elit at sociis varius leo, facilisis convallis quis. Facilisis velit, eget dolor sit arcu rhoncus urna quisque.</p>
-                
-                <!-- insert the unordered list here -->
-                <ul>
-                    <li>dui ultricies integer</li>
-                    <li>dui ultricies integer</li>
-                    <li>dui ultricies integer</li>
-                    <li>dui ultricies integer</li>
-                    <li>dui ultricies integer</li>
-                </ul>
-                
-                <p>Adipiscing dui ultricies integer interdum mattis convallis diam nascetur. Aliquet vel egestas egestas a, eget amet consectetur. Sodales velit volutpat eget eget fames elit consectetur. Lectus aenean nulla diam pellentesque pellentesque duis pulvinar malesuada. </p>
-            </section>
-            
-            <aside class="sidebar">
-                <h2>Best lizards for pets</h2>
-                <!-- insert the ordered list here -->
-                <ul>
-                    <li>Bearded Dragon</li>
-                    <li>Bearded Dragon</li>
-                    <li>Bearded Dragon</li>
-                    <li>Bearded Dragon</li>
-                </ul>
-            </aside>
-        </main>
-        <script src="Index.js"></script>
+            <div class="container">
+                <div class="column">
+                    <section class="main-content"> 
+                        <h2 class="heading1">Cats are <span class="last-text">awsome</span></h2>
+                        <div class="col-left">
+                            <img src="img/cat.jpeg">
+                        </div>
+                        <div class="column">
+                        <div class="col-right">
+                            <p>Lectus diam adipiscing faucibus consequat, auctor molestie a mauris. Cras libero risus ut enim, in purus tellus scelerisque. Nibh mattis dignissim lorem morbi molestie. Mauris elit at sociis varius leo, facilisis convallis quis. Facilisis velit, eget dolor sit arcu rhoncus urna quisque.</p>
+                            <p>Nike shoe</p>
+                            <button onclick="purchase()">Purchase - $149</button>
+                            <p id="error"></p>
+                            <script src="index.js"></script>
+                            <!-- insert the unordered list here -->
+                            <ul>
+                                <li>dui ultricies integer</li>
+                                <li>dui ultricies integer</li>
+                                <li>dui ultricies integer</li>
+                                <li>dui ultricies integer</li>
+                                <li>dui ultricies integer</li>
+                            </ul>
+                            <p>Adipiscing dui ultricies integer interdum mattis convallis diam nascetur. Aliquet vel egestas egestas a, eget amet consectetur. Sodales velit volutpat eget eget fames elit consectetur. Lectus aenean nulla diam pellentesque pellentesque duis pulvinar malesuada. </p>
+                        </div>
+                        </div>
+                    </section>
+                    
+                    <aside class="sidebar">
+                        <div class="col-2">
+                        <h2 class="heading1">Best lizards for <span class="last-text">pets</span></h2>
+                        <!-- insert the ordered list here -->
+                        <ul>
+                            <li>Bearded Dragon</li>
+                            <li>Bearded Dragon</li>
+                            <li>Bearded Dragon</li>
+                            <li>Bearded Dragon</li>
+                        </ul>
+                        <a href="https://twitter.com/home">twitter</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            </main>
+        
+        <script src="Index.js"></script>    
     </body>
 </html>
