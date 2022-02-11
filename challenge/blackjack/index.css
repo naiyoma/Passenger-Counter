@@ -1,0 +1,30 @@
+body {
+    background-image: url("dark.jpg");
+    text-align: center;
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    color: goldenrod;
+}
+#message-el {
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+}
+button {
+    color: #016f32;
+    background: goldenrod;
+    height:40px; 
+    width:150px;
+    border-radius: 20%;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 4px;
+
+}
