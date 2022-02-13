@@ -11,3 +11,7 @@ function save() {
     countEl.textContent = 0
     count = 0
 }
+
+function myPurchase() {
+    document.getElementById("error").innerHTML = "Something went wrong"
+}
