@@ -31,3 +31,20 @@ header  {
     background: black;
     color: white;
 }
+
+.section-one .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #FFE600;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-one .btn:hover {
+    background: white;
+}
+
+.section-two a {
+    color: black;
+}
