@@ -8,7 +8,12 @@ searchInput.addEventListener("keyup", function(event) {
     
     for (let counter = 0; counter < allUsers.length; counter ++) {
         const currentUser = allUsers[counter].textContent.toLocaleLowerCase();
-        console.log(currentUser)
+        
+        if (currentUser.includes(userName)) {
+            allUsers[counter].style.display = "block";
+        } else {
+            allUsers[counter].style.display = "none";
+        }
     }
 
 })
