@@ -88,3 +88,8 @@ nav a:focus {
         margin: .5em 0;
     }
 }
+
+img {
+    height: 400px;
+    width: 900px;
+}
