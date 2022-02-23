@@ -9,6 +9,7 @@ h3 {
     font-family: 'Lora',serif;
     font-weight: 400;
     color: #143774;
+    margin-top: 0;
 }
 
 .container {
@@ -38,6 +39,7 @@ header {
     text-align: center;
     background-color: #f8f8f8;
     padding: 2em 0;
+    margin-bottom: 3em;
 }
 
 .subtitle {
@@ -152,7 +154,7 @@ aside {
 }
 
 .article-recent-secondary{
-    order: 1;
+    order: -1;
 }
 
 @media only screen and (max-width: 650px) {
@@ -176,6 +178,18 @@ aside {
     }
     aside {
         width: 20%;
+    }
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article-recent-main {
+        /* width: 70%; */
+        /* margin-top: -2.5em; */
+    }
+    .article-info {
+        /* width: 25%; */
+        text-align: right;
     }
 }
 
