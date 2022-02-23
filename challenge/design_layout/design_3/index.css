@@ -23,6 +23,10 @@ h3 {
     justify-content: space-between;
 }
 
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+}
 h1 {
     font-family: 'Lora', serif;
     font-weight: 400;
@@ -74,6 +78,83 @@ nav a:focus {
     color: #707070;
 }
 
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-read-more,
+.article-info {
+    font-size: .875rem;
+}
+
+.article-read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
+a {
+    color: #1792d2;
+}
+
+strong {
+    font-weight: 700;
+}
+a:hover,
+a:focus {
+    color: #143774;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+main {
+    width: 75%;
+
+}
+
+aside {
+    width: 20%;
+}
+
+.article-info{
+    margin: 2.5em 0;
+}
+
+.article-featured {
+    border-bottom: #707070 1px solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
+
+.article-featured {
+    border-bottom: #707070 1 px solid;
+    padding: 1em;
+    /* background: pink; */
+    margin-bottom: 3em;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary{
+    order: 1;
+}
+
 @media only screen and (max-width: 650px) {
     .container-nav {
         flex-direction: column;
@@ -87,9 +168,14 @@ nav a:focus {
     nav li {
         margin: .5em 0;
     }
+    .container-2 {
+        flex-direction: row;
+    }
+    main {
+        width: 75%;
+    }
+    aside {
+        width: 20%;
+    }
 }
 
-img {
-    height: 400px;
-    width: 900px;
-}
