@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: 'Ubuntu', serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.6;
 }
 
 h1,
@@ -187,9 +190,20 @@ aside {
         /* width: 70%; */
         /* margin-top: -2.5em; */
     }
+    . .article-recent-secondary {
+        padding-left: 1;
+    }
     .article-info {
         /* width: 25%; */
         text-align: right;
+    }
+
+    .article-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        /* object-position: left; */
+
     }
 }
 
