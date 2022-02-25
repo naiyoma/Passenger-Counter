@@ -1,26 +1,32 @@
-let heroId = 'hero'
-let monsterId = 'monster'
+const hero = {
+    id: 'hero',
+    name: "Wizard",
+    avatar: "images/ciri1.jpg",
+    health: "60",
+    dice: 6
+}
 
-let heroName = "Wizard"
-let heroAvatar = "images/ciri1.jpg"
-let heroHealth = "60"
-let heroDice = 6
+const monster = {
+    id: 'monster',
+    name: "Orc",
+    avatar: "images/ciri2.jpg",
+    health: "10",
+    dice: 4
+}
 
-let monsterName = "Orc"
-let monsterAvatar = "images/ciri2.jpg"
-let monsterHealth = "10"
-let monsterDice = 4
 
-function renderCharacter(elementId, name, avatar, health, diceRoll) {
-    document.getElementById(elementId).innerHTML = `
+
+function renderCharacter(data) {
+    const {id, name, avatar, health, dice} = data;
+    document.getElementById(id).innerHTML = `
         <div class="character-card">
             <h4 class="name"> ${name} </h4>
             <img class="avatar" src="${avatar}"/>
             <p class="health">health: <b> ${health} </b></p>
-            <div class="dice-container"><div class="dice"> ${diceRoll} </div></div>
+            <div class="dice-container"><div class="dice"> ${dice} </div></div>
         </div>
     `;
 }
 
-renderCharacter(heroId, heroName, heroAvatar, heroHealth, heroDice)
-renderCharacter(monsterId, monsterName, monsterAvatar, monsterHealth, monsterDice)
+renderCharacter(hero)
+renderCharacter(monster)
