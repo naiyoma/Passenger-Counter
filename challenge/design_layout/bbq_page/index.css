@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -20,6 +24,7 @@ h1 + p {
 
 h2 {
     font-size: 1.3125rem;
+    margin: 2em;
 }
 
 h2 + p {
@@ -46,8 +51,40 @@ strong {
 }
 .intro {
     background-image: url(images/pork.jpg);
+    background-size: cover;
+    background-position: center;
     background-color: #404040;
     padding: 0 .25em 1em;
     display: flex;
     flex-direction: column;
+}
+
+.email-collector {
+    border: 3px #F18119 solid;
+    width: 250px;
+}
+
+@media (min-width: 500px) {
+    body {
+        font-size: 1.12rem;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
