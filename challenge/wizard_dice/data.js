@@ -1,20 +1,19 @@
-
-const CharacterData = {
+const characterData = {
     hero: {
-        id: 'hero',
         name: "Wizard",
-        avatar: "images/ciri1.jpg",
-        health: "60",
+        avatar: "images/wizard.png",
+        health: 60,
         diceCount: 3,
+        currentDiceScore: []
     },
-
     monster: {
-        id: 'monster',
         name: "Orc",
-        avatar: "images/ciri2.jpg",
-        health: "10",
-        diceCount: 1
+        avatar: "images/orc.png",
+        health: 10,
+        diceCount: 1,
+        currentDiceScore: []
+
     }
 }
 
-export default CharacterData
+export default characterData

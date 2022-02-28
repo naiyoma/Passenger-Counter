@@ -1,39 +1,17 @@
-import CharacterData from './data.js'
-import getDiceRollyArray from './utils.js'
+import characterData from './data.js'
+import Character from './Character.js'
 
-function Character(data) {
-    Object.assign(this, data)
-
-    this.getDiceHtml = function(diceCount) {
-       return getDiceRollyArray(diceCount).map(function(num) {
-            return `<div class="dice">${num}</div>`
-        }).join(" ")
-    }
-
-    this.getCharacterHtml = function() {
-        const {id, name, avatar, health, diceCount} = this;
-        const diceHtml = this.getDiceHtml(diceCount)
-
-        return `
-        <div class="character-card">
-            <h4 class="name"> ${name} </h4>
-            <img class="avatar" src="${avatar}"/>
-            <p class="health">health: <b> ${health} </b></p>
-            <div class="dice-container">
-                 ${diceHtml}
-            </div>
-        </div>`;
-    }
+function attack(){
+    render()
 }
-const wizard = new Character(CharacterData.hero)
-const orc = new Character(CharacterData.monster)
-
 
 function render() {
-    document.getElementById(wizard.id).innerHTML = wizard.getCharacterHtml()
-    document.getElementById(orc.id).innerHTML = orc.getCharacterHtml()
-    wizard.getCharacterHtml()
-    orc.getCharacterHtml()
+    document.getElementById('hero').innerHTML = wizard.getCharacterHtml();
+    document.getElementById('monster').innerHTML = orc.getCharacterHtml();
 }
 
+document.getElementById("attack-button").addEventListener('click', attack)
+
+const wizard = new Character(characterData.hero)
+const orc = new Character(characterData.monster)
 render()
