@@ -1,4 +1,5 @@
 import CharacterData from './data.js'
+import getDiceRollyArray from './utils.js'
 
 function Character(data) {
     Object.assign(this, data)
@@ -36,14 +37,3 @@ function render() {
 }
 
 render()
-
-
-
-
-function getDiceRollyArray(diceCount) {
-    let diceArray = new Array(diceCount).fill(0).map(function(){
-        return Math.floor(Math.random() * 6) + 1
-    })
-    return diceArray
-}
-
