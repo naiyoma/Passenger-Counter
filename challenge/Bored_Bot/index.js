@@ -1,11 +1,13 @@
-document.getElementById("bored-bot").addEventListener("click", getIdea)
+document.getElementById("activity-name").textContent = `
 
-function getIdea() {
-    fetch("https://www.boredapi.com/api/activity")
-        .then(res => res.json())
-        .then(data => {
-            document.body.classList.add("fun")
-            document.getElementById("idea").textContent = data.activity
-            document.getElementById("title").textContent = "🦾 HappyBot🦿"
-        })
-}
+👻Activity Finder👻
+`
+
+document.getElementById("button").addEventListener("click", function(){
+    fetch("https://apis.scrimba.com/bored/api/activity")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+        document.getElementById("title").textContent = `${data.activity}`
+    })
+})
