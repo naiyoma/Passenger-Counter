@@ -8,7 +8,7 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.querySelector("#sum-el")
 let cardEl = document.querySelector("#card-el")
 
-
+// get player data
 let player = {
     name : "Aurelia",
     chips : 145
